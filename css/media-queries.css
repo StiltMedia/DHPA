@@ -1,0 +1,182 @@
+@media (max-width: 1200px) {
+  .pagewidth {
+      width: 95%;
+  }
+  #wrapper {
+      width: 95%;
+  }
+
+}
+
+@media (max-width: 1075px) {
+
+
+
+.photobox {
+    margin: 0;
+    padding: 35px 5%;
+    width: 90%;
+}
+footer 
+.pagewidth {
+    width: 100%;
+}
+}
+
+
+
+@media (max-width: 810px) {
+
+.blackbox {
+    width: 70%;
+}
+
+}
+
+
+@media (max-width: 730px) {
+
+.blackbox h3 {
+    font-size: 40px;
+}
+.blackbox {
+  padding: 20px;
+}
+input[type="text"] {
+    width: 38%;
+}
+
+input[type="submit"] {
+    font-size: 24px;
+    width: 53%;
+}
+.bx-wrapper, .bx-viewport {
+    height: 440px !important;
+}
+.box33 {
+  display: inline-block;
+  float: none !important;
+  margin-left: 5%;
+  margin-right: 5% !important;
+  text-align: center;
+  vertical-align: top;
+  width: 39%;
+}
+
+.photobox p {
+    color: #ffffff;
+    display: block;
+    font-family: Open Sans;
+    font-size: 17px;
+    line-height: 25px;
+    margin: 0 auto 50px;
+    width: 88%;
+}
+}
+
+
+@media (max-width: 620px) {
+#phone {
+  background: rgba(0, 0, 0, 0) url("../images/phone.png") no-repeat scroll 0 2px;
+  font-size: 21px;
+  padding: 0 0 6px 26px;
+}
+.blackbox h3 {
+    font-size: 32px;
+}
+.blackbox {
+  margin: 37px auto;
+}
+input[type="text"] {
+  color: #292b2e;
+  font-family: Sanchez;
+  font-size: 16px;
+  margin: 0 1% 13px;
+  padding: 6px 9px;
+  width: 75%;
+}
+
+}
+
+
+@media (max-width: 560px) {
+header h1 {
+    display: inline-block;
+    float: none;
+    height: auto;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+}
+#phone {
+    background: rgba(0, 0, 0, 0) url("../images/phone.png") no-repeat scroll 0 2px;
+    display: block;
+    float: none;
+    font-size: 24px;
+    margin: 0 auto 25px;
+    padding: 0 0 6px 26px;
+    width: 260px;
+}
+
+}
+
+
+
+@media (max-width: 530px) {
+.photobox h5 {
+    font-size: 23px;
+}
+.photobox p {
+    margin: 0 auto 30px;
+}
+
+.blackbox h3 {
+    font-size: 27px;
+}
+.photobox a {
+    font-size: 23px;
+}
+}
+
+
+@media (max-width: 400px) {
+
+.blackbox {
+    margin: 24px auto;
+}
+
+.photobox h5 {
+    font-size: 18px;
+}
+.photobox p {
+  color: #ffffff;
+  display: block;
+  font-family: Open Sans;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 auto 50px;
+  width: 88%;
+}
+.box33 {
+    display: inline-block;
+    float: none !important;
+    margin-left: 5%;
+    margin-right: 5% !important;
+    text-align: center;
+    vertical-align: top;
+    width: 90%;
+}
+#wrapper {
+    overflow: hidden;
+    width: 90%;
+}
+.copy {
+  color: #fff;
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 0;
+  padding: 21px 0;
+  text-align: center;
+  width: 100%;
+}
+}
