@@ -9,6 +9,9 @@ body{
 .align-right{
   text-align: right;
 }
+.center{
+  text-align: center;
+}
 #header{
   border-bottom: 2px solid #e1e1e1;
 }
@@ -318,16 +321,16 @@ body .bx-wrapper {
   opacity: 1
 }
 .event-list li a img {
-  height: 100%;
-  min-height: 100%;
-  min-width: 100%;
-  width: auto;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
 }
 .events .button {
   margin-top: 50px
 }
 .button {
-  border: 3px solid rgb(0, 0, 0);
+  border: 4px solid rgb(0, 0, 0);
   border-radius: 0;
   color: rgb(0, 0, 0);
   display: inline-block;
@@ -344,6 +347,7 @@ body .bx-wrapper {
 .button:hover {
   background: rgb(24, 26, 26) none repeat scroll 0 0;
   color: rgb(256, 256, 256);
+  border: 4px solid rgb(0, 0, 0);
 }
 .bg-dark {
     background: rgb(24, 26, 26) none repeat scroll 0 0;
@@ -615,6 +619,97 @@ body .bx-wrapper {
   background: rgba(0, 0, 0, 0) url("../images/upmenu.png") no-repeat scroll 0 0;
 }
 
+
+
+
+
+
+
+
+
+
+.albumbar .container{
+  width: 100%;
+}
+
+.albumbar {
+    background: rgb(18, 18, 18) none repeat scroll 0 0;
+    display: inline-block;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.albumbar .menu {
+    display: block;
+    margin: 0 auto;
+    width: 95%;
+}
+.albumbar .menu li {
+    display: inline-block;
+    margin: 0;
+}
+.albumbar .menu li a {
+  border: 4px solid rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  font-family: Open Sans;
+  font-size: 19px;
+  font-weight: 600;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  width: 270px;
+  margin-right: 20px;
+}
+.albumbar .menu li a:hover{
+  background: #303030
+}
+.albumbar .menu li:hover a{
+}
+.albumbar .menu li.nameof{
+  float: right;
+  margin-right: 0
+}
+.albumbar .menu li.nameof a::after {
+  background: rgba(0, 0, 0, 0) url("../images/whitearrow.png") no-repeat scroll 0 0;
+  content: "";
+  display: inline-block;
+  height: 15px;
+  margin-left: 22px;
+  width: 22px;
+}
+.albumbar .menu li.addimage a::before {
+    background: rgba(0, 0, 0, 0) url("../images/more.png") no-repeat scroll 0 0;
+    content: "";
+    display: inline-block;
+    height: 13px;
+    margin-right: 18px;
+    width: 12px;
+}
+
+.gallery-box.album .event-header{
+
+}
+
+.gallery-box.album .event-header h2 {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 29px;
+  font-weight: 700;
+  margin: 0;
+  width: 50%;
+}
+.gallery-box.album .event-header .delete {
+  background: rgba(0, 0, 0, 0) url("../images/delete.png") no-repeat scroll right top;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 600;
+  padding: 0 45px 0 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .gallery-box{
   padding: 100px 0
 }
@@ -692,12 +787,14 @@ body .bx-wrapper {
 }
 
 
-
+.event-gallery-list{
+  text-align: center;
+}
 .event-gallery-list li {
-  display: inline-block;
-  margin: 0 1.2% 80px;
-  overflow: hidden;
-  width: calc(89% / 4);
+    display: inline-block;
+    margin: 0 20px 80px;
+    overflow: hidden;
+    width: 360px;
 }
 
 .event-gallery-list li .imagebox {
@@ -788,7 +885,9 @@ body .bx-wrapper {
 .event-gallery-list li ul li a.download {
   background-position: -194px 0;
 }
-
+.event-gallery-list li ul li a.delete {
+  background: rgba(0, 0, 0, 0) url("../images/delete.png") no-repeat scroll 0 0;
+}
 
 
 
@@ -941,6 +1040,741 @@ body .bx-wrapper {
   padding: 14px 52px;
   text-decoration: none;
 }
+
+
+
+
+#tab-container.sign-tab{
+
+}
+
+#tab-container.sign-tab .etabs {
+    display: block;
+    margin: 0 auto 60px;
+    padding: 0;
+    text-align: center;
+    width: auto;
+}
+#tab-container.sign-tab .tab a {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px 75px;
+}
+#tab-container.sign-tab form {
+  display: block;
+  margin: 0 auto;
+  max-width: 475px;
+  width: 100%;
+}
+#tab-container.sign-tab{
+  
+}
+#tab-container.sign-tab form label{
+  display: inline-block;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: 100%;
+}
+#tab-container.sign-tab form input {
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 0;
+  display: inline-block;
+  height: auto;
+  line-height: normal;
+  margin-bottom: 0;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.forgot{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    font-family: Open Sans;
+    font-size: 15px;
+    margin-top: 5px;
+    text-align: right;
+    width: 100%;
+}
+.forgot a{
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+.mandatory {
+  display: inline-block;
+  color: #000000;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 100%
+}
+
+#tab-container.sign-tab form #submit {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 4px solid rgb(26, 26, 26);
+  color: rgb(1, 1, 1);
+  display: inline-block;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  height: auto;
+  line-height: 2em;
+  margin-bottom: 10px;
+  margin-left: 0;
+  outline: medium none;
+  padding: 3px 0;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+#tab-container.sign-tab form #submit:hover {
+  background: rgb(26, 26, 26) none repeat scroll 0 0;
+  color: rgb(256, 256, 256);
+}
+#checkout-step1 .row {
+  background: rgba(0, 0, 0, 0) url("../images/vertical.png") repeat-y scroll center top;
+  padding: 50px 0;
+}
+#checkout-step1 .six.columns.align-right .mandatory {
+    text-align: left;
+    width: 80%;
+}
+#checkout-step1 .six.columns.align-right .blackbutton {
+  padding: 14px 0;
+  text-align: center;
+  width: 80%;
+}
+
+
+
+
+.content-box form {
+  display: block;
+  margin: 0 auto;
+  max-width: 475px;
+  width: 100%;
+}
+
+.content-box form label{
+  display: inline-block;
+  font-family: Open Sans;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.content-box form input {
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 0;
+  display: inline-block;
+  height: auto;
+  line-height: normal;
+  margin-bottom: 0;
+  padding: 10px 15px;
+  width: 100%;
+}
+.content-box form textarea {
+  border: 1px solid rgb(90, 90, 90);
+  border-radius: 0;
+  display: inline-block;
+  height: auto;
+  line-height: normal;
+  margin-bottom: 0;
+  padding: 10px 15px;
+  width: 100%;
+  min-height: 250px
+}
+.content-box form #submit {
+  background: rgb(255, 255, 255) none repeat scroll 0 0;
+  border: 4px solid rgb(26, 26, 26);
+  color: rgb(1, 1, 1);
+  display: inline-block;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  height: auto;
+  line-height: 2em;
+  margin-bottom: 10px;
+  margin-left: 0;
+  outline: medium none;
+  padding: 3px 85px;
+  float: right;
+  transition: all 0.3s ease 0s;
+  width: auto;
+}
+.content-box form #submit:hover {
+  background: rgb(26, 26, 26) none repeat scroll 0 0;
+  color: rgb(256, 256, 256);
+}
+
+.content-box form .half {
+    display: inline-block;
+    margin-right: 5%;
+    width: 47%;
+}
+.content-box form p{
+  margin-bottom: 30px
+}
+.content-box form .half.last {
+    margin-right: 0;
+}
+
+
+.six.columns #tab-container.sign-tab {
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+}
+
+.six.columns #tab-container.sign-tab form {
+    max-width: none;
+}
+.six.columns  #tab-container.sign-tab .etabs {
+    text-align: left;
+}
+.six.columns #tab-container.sign-tab .tab a {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 5px 0;
+    text-align: center;
+    width: 100%;
+}
+.six.columns #tab-container.sign-tab form {
+    display: block;
+    margin: 0 auto;
+    max-width: none;
+    width: 98%;
+}
+.six.columns .tab {
+  margin: 0 2% 0 0;
+  width: 47%;
+}
+
+.content-box #checkout-step2  form {
+  max-width: 100%;
+}
+
+#checkout-step2 .page-title {
+    margin: 0;
+}
+.content-box #checkout-step2  form #submit {
+    padding: 3px 0;
+    width: 100%;
+}
+
+.content-box form .third {
+    display: inline-block;
+    margin-right: 4%;
+    width: 30%;
+}
+.content-box form .third.last {
+  margin-right: 0;
+  float: right;
+}
+
+.content-box #checkout-step2 .six.columns.align-left form p {
+    margin-bottom: 25px;
+}
+
+.content-box #checkout-step2 .six.columns.align-left form label {
+    margin-bottom: 10px;
+}
+.content-box #checkout-step2 .six.columns.align-left form input {
+  padding: 7px 10px;
+}
+
+
+#checkout-step2 .six.columns.align-right {
+    background: rgb(247, 247, 247) none repeat scroll 0 0;
+    float: right;
+    margin-top: 70px;
+    overflow: hidden;
+    padding: 40px 3%;
+    width: 45%;
+}
+#checkout-step2 .six.columns.align-right .price{
+    font-size: 25px;
+    font-weight: 600;
+}
+#checkout-step2 .six.columns.align-right #resume .price {
+    position: absolute;
+    right: 3%;
+}
+.content-box #checkout-step2 .six.columns.align-left form p {
+    margin-bottom: 25px;
+}
+#checkout-step2 .six.columns.align-right img {
+  display: inline-block;
+  height: auto;
+  margin-bottom: 20px;
+  margin-right: 6%;
+  width: 50%;
+}
+#checkout-step2 .six.columns.align-right .details {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 43%;
+}
+#checkout-step2 .six.columns.align-right .details p{
+  font-size:14px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+#checkout-step2 .six.columns.align-right .details p a{
+  color: #000000;
+  text-decoration: underline;
+}
+#checkout-step2 .six.columns.align-right #resume p {
+    margin-bottom: 5px;
+}
+
+.content-box #checkout-step2.confirmation .six.columns.align-left form p {
+    margin-bottom: 35px;
+}
+
+.content-box #checkout-step2.confirmation .edit-info {
+  color: rgb(0, 0, 0);
+  font-family: Open Sans;
+  font-size: 18px;
+  text-decoration: underline;
+  position: absolute;
+  right: 0;
+  top: 0px;
+}
+
+
+
+.lightboxes-box{
+  padding: 100px 0
+}
+
+.lightboxes-box .container{
+  width: 88%
+}
+
+
+
+.lightboxes-list  {
+    text-align: center;
+}
+.lightboxes-list li {
+    display: inline-block;
+    margin: 0 15px;
+    width: 380px;
+    vertical-align: top;
+}
+
+.lightboxes-list li .imagebox {
+    background: rgba(0, 0, 0, 0) url("../images/lightbox-hover.png") repeat scroll center center;
+    display: inline-block;
+    height: 290px;
+    overflow: hidden;
+    width: 380px;
+}
+.lightboxes-list li .imagebox:hover img{
+    opacity: 0.3
+}
+.lightboxes-list li .imagebox img {
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    width: auto;
+}
+.lightboxes-list li h5 {
+  font-family: Open Sans;
+  font-size: 19px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.lightboxes-list li.add-lightbox {
+
+}
+.lightboxes-list li.add-lightbox a {
+  border: 3px dashed rgb(240, 240, 240);
+  color: rgb(187, 187, 187);
+  display: inline-block;
+  font-weight: 600;
+  text-decoration: none;
+  width: 100%;
+  padding: 131px 0;
+}
+
+
+
+.open-image-box{
+  padding: 100px 0;
+}
+.open-image-box .container{
+  width: 70%
+}
+.open-image-box .image-content {
+    position: relative;
+}
+.open-image-box .image-content .caption {
+  position: absolute;
+  background: rgba(255,255,255,0.7);
+  right: 0;
+  bottom: 70px;
+  padding: 20px;
+}
+.open-image-box .image-content .caption b {
+  font-size: 88px;
+  font-weight: bold;
+  line-height: 88px;
+}
+.open-image-box .image-content .caption p {
+  color: rgb(0, 0, 0);
+  font-size: 31px;
+  margin-bottom: 0;
+  padding-left: 5px;
+}
+.open-image-box .image-content img {
+  width: 100%;
+  height: auto;
+}
+.open-image-box .five.columns p {
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.row.services{
+  margin-bottom: 100px
+}
+.row.services div img {
+  height: auto;
+  width: 100%;
+}
+.row.services div h5 {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.testimonial {
+  background: rgba(0, 0, 0, 0) url("../images/bgTestimonial.png") no-repeat scroll center center;
+  padding: 120px 0;
+  text-align: center;
+  width: 100%;
+}
+.testimonial p {
+  display: block;
+  font-size: 19px;
+  margin: 0 auto 18px;
+  max-width: 790px;
+  width: 100%;
+}
+.testimonial span {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.slider-box .bx-pager.bx-default-pager,.logos-box .bx-pager.bx-default-pager{
+  display: none !important
+}
+.slider-box .bx-wrapper .bx-viewport, .logos-box .bx-wrapper .bx-viewport{
+  background: transparent !important;
+  left: 0;
+  text-align: center;
+}
+
+.slider-box .bx-wrapper .bx-prev,.logos-box .bx-wrapper .bx-prev {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/arrowscarousel.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 178% auto !important;
+    height: 25px;
+    left: 10px;
+    width: 20px;
+    opacity: 1
+}
+.slider-box .bx-wrapper .bx-prev:hover,.logos-box .bx-wrapper .bx-prev:hover {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/arrowscarousel.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 178% auto !important;
+    height: 25px;
+    left: 10px;
+    width: 20px;
+    opacity: 1
+}
+.slider-box .bx-wrapper .bx-next,.logos-box .bx-wrapper .bx-next{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/arrowscarousel.png");
+    background-origin: padding-box;
+    background-position: -18px 0;
+    background-repeat: no-repeat;
+    background-size: 178% auto !important;
+    height: 25px;
+    right: 10px;
+    width: 20px;
+    opacity: 0.8
+}
+.slider-box .bx-wrapper .bx-next:hover,.logos-box .bx-wrapper .bx-next:hover{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("../images/arrowscarousel.png");
+    background-origin: padding-box;
+    background-position: -18px 0;
+    background-repeat: no-repeat;
+    background-size: 178% auto !important;
+    height: 25px;
+    right: 10px;
+    width: 20px;
+    opacity: 1
+}
+
+.slider-box .bxslider li .caption {
+  left: auto;
+  margin: 0 20%;
+  position: static;
+  text-align: center;
+  top: auto;
+  width: 60%;
+}
+
+.slider-box .bxslider .caption p {
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 19px;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.slider-box .bxslider .caption h5{
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 19px;
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.slider-box .bxslider .caption span{
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 19px;
+  margin: 0;
+  font-weight: 600;  
+  text-transform: uppercase;
+}
+
+
+
+.testimonial-slider{
+  width: 100%  !important;
+  text-align: center;
+}
+.testimonial-slider li{
+  width: 100%  !important;
+}
+
+
+.logos-box {
+  background: #F7F7F7;
+  padding: 80px 0;
+  text-align: center;
+  width: 100%;
+}
+
+
+
+
+
+.logos-box .bx-wrapper img {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.slider-box {
+  background: rgba(0, 0, 0, 0) url("../images/testimonial-slider.jpg") no-repeat scroll center center;
+  padding: 150px 0;
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+}
+.open-image-box .lamp {
+  background: rgba(0, 0, 0, 0) url("../images/photoicons.png") no-repeat scroll -100px 0;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  margin: 25px 0;
+  opacity: 1;
+  transition: all 0.2s ease 0s;
+  width: 40px;
+}
+.open-image-box .lamp:hover{
+  opacity: 0.7
+}
+
+.open-image-box .sizes {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.open-image-box .sizes li{
+  display: inline-block;
+}
+.open-image-box .sizes li a {
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 0;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  height: auto;
+  line-height: 20px;
+  margin-right: 7px;
+  margin-top: 15px;
+  padding: 14px 21px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.2s ease 0s;
+  width: 20px;
+}
+.open-image-box .sizes li.active a,.open-image-box .sizes li a:hover{
+  background: rgb(24, 26, 26) none repeat scroll 0 0;
+  color: rgb(256, 256, 256);
+  border: 4px solid rgb(0, 0, 0);
+}
+.open-image-box .five.columns p a{
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.open-image-box h5{
+  margin-bottom: 0;
+  margin-top: 15px;
+   font-size: 14px;
+   font-weight: bold;
+}
+.open-image-box .button{
+  margin: 30px 0
+}
+
+
+.related-box {
+  background: rgb(247, 247, 247) none repeat scroll 0 0;
+  padding: 60px 0;
+}
+.related-box .container{
+  width: 80%
+}
+.related-box h3 {
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-family: Open Sans;
+  font-size: 29px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  margin-right: 35px;
+}
+.related-box .view-all {
+  display: inline-block;
+  color: #000000;
+  vertical-align: top;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 4px;
+}
+.related-images div {
+  height: 200px;
+}
+
+.related-images div img{
+  min-height: 180px;
+  max-height: 180px;
+  height: auto;
+  width: auto;
+  max-width: 90%
+}
+
+.top-images {
+  display: inline-block !important;
+  vertical-align: top;
+  width: 69%;
+  margin-left: 5%;
+}
+.albumbar.carousel .container {
+    width: 95%;
+}
+.albumbar.carousel .menu {
+  display: inline-block;
+  margin: 0 auto;
+  width: 25%;
+  text-align: right;
+}
+.albumbar.carousel  .menu li a {
+  margin-right: 0;
+  margin-top: 55px;
+}
+
+.albumbar.carousel {
+  padding: 15px 0;
+}
+.top-images div {
+  height: 160px;
+}
+.top-images.slick-slider {
+  margin-bottom: 0;
+}
+.top-images div img {
+  height: auto;
+  max-height: 160px;
+  max-width: 97%;
+  min-height: 160px;
+  width: auto;
+}
+.top-images .slick-prev.slick-arrow{
+  left: -60px
+}
+
+.top-images .slick-next.slick-arrow{
+  right: -60px;
+}
+.slick-prev.slick-arrow {
+  background: url("../images/arrowscarousel.png") repeat scroll 0 0;
+  height: 51px;
+  left: -100px;
+  text-indent: -5000px;
+  margin-top: -25px;
+  width: 35px;
+  opacity: 0.7
+}
+.slick-prev.slick-arrow:hover{
+  opacity: 1;
+  background: url("../images/arrowscarousel.png") repeat scroll 0 0;
+}
+.slick-next.slick-arrow{
+  background: url("../images/arrowscarousel.png") repeat scroll top right;
+  height: 51px;
+  right: -100px;
+  text-indent: -5000px;
+  margin-top: -25px;
+  width: 35px;
+  opacity: 0.7
+}
+.slick-next.slick-arrow:hover{
+   background: url("../images/arrowscarousel.png") repeat scroll top right;
+   opacity: 1;
+}
+
+
 #footer{
   background: #0c0d0d;
   padding: 30px 0
