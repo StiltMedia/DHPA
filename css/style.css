@@ -1,9 +1,16 @@
+html {
+  height: 100%;
+}
+
 body{
-  font-size: 16px;
+  font-size: 100%;
   font-family: Open Sans;
   color: #000000;
+  height: 100%;
 }
 .align-left{
+  text-align: left;
+}.align-left{
   text-align: left;
 }
 .align-right{
@@ -25,7 +32,7 @@ header a.logo {
     color: rgb(0, 0, 0);
     display: inline-block;
     font-family: Open Sans;
-    font-size: 46px;
+    font-size: 2.875rem;
     font-weight: bold;
     margin-top: 20px;
     text-decoration: none;
@@ -48,7 +55,7 @@ header a.logo {
 #menu li a {
   color: rgb(24, 26, 26);
   font-family: Open Sans;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   margin-left: 15px;
   padding: 5px 18px;
@@ -74,63 +81,39 @@ header a.logo {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url("../images/menuIcons.png");
+  background-image: url("../images/homemenuIcons.png");
   background-origin: padding-box;
+  background-position: bottom left;
   background-repeat: no-repeat;
-  background-size: 425% auto !important;
-  display: inline-block;
-  height: 20px;
-  margin: 7px 25px -4px;
-  padding: 0;
-  width: 20px;
   opacity: 0.9;
+  text-align: center;
+  transform: translateY(20%);
+  height: 28px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 #menu li .user:hover{
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: url("../images/menuIcons.png");
-  background-origin: padding-box;
-  background-repeat: no-repeat;
-  background-size: 425% auto !important;
-  display: inline-block;
-  height: 20px;
-  margin: 7px 25px -4px;
-  padding: 0;
-  width: 20px;
   opacity: 1;
+  background-position: top left;
 }
 #menu li .cart {
   background-attachment: scroll;
   background-clip: border-box;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url("../images/menuIcons.png");
+  background-image: url("../images/homemenuIcons.png");
   background-origin: padding-box;
-  background-position: right top;
+  background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: 425% auto !important;
-  display: inline-block;
-  height: 20px;
-  margin: 7px 20px -4px 15px;
-  padding: 0;
-  width: 20px;
   opacity: 0.9;
+  text-align: center;
+  transform: translateY(20%);
+  height: 28px;
+  display: inline-block;
+  box-sizing: border-box;
 }
 #menu li .cart:hover {
-  background-attachment: scroll;
-  background-clip: border-box;
-  background-color: rgba(0, 0, 0, 0);
-  background-image: url("../images/menuIcons.png");
-  background-origin: padding-box;
-  background-position: right top;
-  background-repeat: no-repeat;
-  background-size: 425% auto !important;
-  display: inline-block;
-  height: 20px;
-  margin: 7px 20px -4px 15px;
-  padding: 0;
-  width: 20px;
   opacity: 1;
+  background-position: top right;
 }
 
 
@@ -142,12 +125,14 @@ header a.logo {
 }
 .home #menu li .user:hover{
   background-image: url("../images/homemenuIcons.png");
+  background-position: bottom left;
 }
 .home #menu li .cart {
   background-image: url("../images/homemenuIcons.png");
 }
 .home #menu li .cart:hover {
   background-image: url("../images/homemenuIcons.png");
+  background-position: bottom right;
 }
 .bx-wrapper .bx-viewport{
   left: 0 !important
@@ -165,7 +150,7 @@ header a.logo {
 .bxslider li .caption h5 {
   font-family: Open Sans;
   font-weight: bold;
-  font-size: 57px;
+  font-size: 3.563rem;
   color: #FFF;
   margin-bottom: 20px;
 }
@@ -174,17 +159,17 @@ header a.logo {
     color: rgb(255, 255, 255);
     display: inline-block;
     font-family: Open Sans;
-    font-size: 29px;
+    font-size: 1.813rem;
     margin-bottom: 40px;
     text-transform: uppercase;
     width: 100%;
 }
 .bxslider li .caption a {
-  border: 4px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-top: 15px;
   padding: 10px 40px;
   text-decoration: none;
@@ -226,50 +211,54 @@ body .bx-wrapper {
 .bg-grey .search-input {
   background-color: rgba(0, 0, 0, 0) !important;
   background-image: url("../images/search.png");
+  background-position: left center;
   background-repeat: no-repeat !important;
-  background-size: 11% auto !important;
+  background-size: 20px auto !important;
   border: medium none !important;
   color: rgb(173, 177, 177);
   font-family: Open Sans;
-  font-size: 21px;
+  font-size: 1.125rem;
   font-weight: normal;
-  margin: 18px;
-  padding-left: 60px;
+  margin: 0.5rem;
+  padding-left: 3em;
+  float: left;
 }
 .bg-grey .photos {
   background-image: url("../images/droparrow.png");
-  background-position: right 30px top 20px;
+  background-position: right center;
   background-repeat: no-repeat;
   background-size: 15px auto !important;
   border-left: 2px solid rgb(204, 204, 204);
   color: rgb(1, 1, 1);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 24px;
-  margin-right: 22px;
-  margin-top: 15px;
-  padding: 3px 65px 3px 50px;
+  font-size: 1.5rem;
+  font-size: 1.125rem;
+  margin-right: 1.5em;
+  margin-top: 0.8rem;
+  padding: 3px 2em 3px 2em;
 }
 .bg-grey .refine {
   background-image: url("../images/filter.png");
-  background-position: right top 14px;
+  background-position: right center;
   background-repeat: no-repeat;
-  background-size: 23px auto !important;
+  background-size: 20px auto !important;
   border-left: 2px solid rgb(204, 204, 204);
   color: rgb(1, 1, 1);
   font-family: Open Sans;
-  font-size: 24px;
-  margin-top: 15px;
-  padding: 3px 50px 3px 49px;
+  font-size: 1.5rem;
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  padding: 3px 2.5em 3px 2em;
 }
 .home .events {
-    padding: 100px 0;
+    padding: 3em 0;
     text-align: center;
 }
 .home .events h5 {
   color: rgb(0, 0, 0);
   font-family: Open Sans;
-  font-size: 29px;
+  font-size: 1.813rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
@@ -306,7 +295,7 @@ body .bx-wrapper {
   border: 0 none;
   bottom: 0;
   color: rgb(255, 255, 255);
-  font-size: 19px;
+  font-size: 1.188rem;
   font-weight: 600;
   left: 0;
   opacity: 0;
@@ -327,15 +316,16 @@ body .bx-wrapper {
     width: 100%;
 }
 .events .button {
-  margin-top: 50px
+  margin-top: 2em;
+  margin-bottom: 0px;
 }
 .button {
-  border: 4px solid rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
   border-radius: 0;
   color: rgb(0, 0, 0);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   height: auto;
   line-height: 20px;
@@ -347,7 +337,7 @@ body .bx-wrapper {
 .button:hover {
   background: rgb(24, 26, 26) none repeat scroll 0 0;
   color: rgb(256, 256, 256);
-  border: 4px solid rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
 }
 .bg-dark {
     background: rgb(24, 26, 26) none repeat scroll 0 0;
@@ -357,9 +347,9 @@ body .bx-wrapper {
 .bg-dark h5 {
   color: rgb(255, 255, 255);
   font-family: Open Sans;
-  font-size: 29px;
+  font-size: 1.613rem;
   font-weight: bold;
-  margin-top: 20px;
+  margin-top: 1em;
   text-align: center;
 }
 
@@ -387,15 +377,21 @@ body .bx-wrapper {
   background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
   color: rgb(255, 255, 255);
   display: inline-block;
-  font-size: 32px;
-  height: 100%;
-  padding-top: 29%;
+  font-size: 2rem;
   position: absolute;
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease 0s;
   width: 100%;
   opacity: 0;
+  height: 100%;
+}
+.featured-list li a span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
 }
 .featured-list li:hover a{
   opacity: 1
@@ -403,14 +399,12 @@ body .bx-wrapper {
 
 .featured-list li img {
     height: auto;
-    max-height: 437px;
-    min-width: 100%;
+    max-width: 100%;
     width: auto;
 }
 
-
 .instagramfeed {
-    padding: 100px 0;
+    padding: 3em 0;
     text-align: center;
 }
 .instagramfeed .container{
@@ -419,7 +413,7 @@ body .bx-wrapper {
 .instagramfeed h5 {
     color: rgb(0, 0, 0);
     font-family: Open Sans;
-    font-size: 29px;
+    font-size: 1.813rem;
     font-weight: 700;
     text-align: left;
     text-transform: uppercase;
@@ -457,7 +451,7 @@ body .bx-wrapper {
 
 
 .events-box{
-  padding: 100px 0
+  padding: 3em 0
 }
 .events-box .container {
     width: 85%;
@@ -483,8 +477,8 @@ body .bx-wrapper {
 .event-list-tabs li a img {
   display: inline-block;
   height: auto;
-  min-width: 100%;
-  min-height: 210px
+  max-width: 100%;
+  /*min-height: 210px*/
 }
 .event-list-tabs li h5 {
   margin-bottom: 0rem;
@@ -496,7 +490,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 19px;
+  font-size: 1.188rem;
 }
 .event-list-tabs li .subtitle{
   display: inline-block;
@@ -505,7 +499,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 19px; 
+  font-size: 1.188rem; 
 }
 .event-list-tabs li .location{
   display: inline-block;
@@ -514,7 +508,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 14px;   
+  font-size: 0.875rem;   
 }
 .event-list-tabs li .date{
   display: inline-block;
@@ -523,7 +517,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 14px;    
+  font-size: 0.875rem;    
 }
 .loader{
   display: block;
@@ -531,7 +525,7 @@ body .bx-wrapper {
 }
 .etabs {
   display: block;
-  margin: 0 auto 100px;
+  margin: 0 auto 3em;
   padding: 0;
   text-align: center;
   width: auto;
@@ -550,16 +544,16 @@ body .bx-wrapper {
 }
 .tab a {
   background: rgb(255, 255, 255) none repeat scroll 0 0;
-  border: 4px solid rgb(26, 26, 26);
+  border: 3px solid rgb(26, 26, 26);
   color: rgb(1, 1, 1);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   line-height: 2em;
-  margin-left: -8px;
+  margin-left: -0.5rem;
   outline: medium none;
-  padding: 15px 75px;
+  padding: 1rem 3rem;
   text-decoration: none;
 }
 .tab a:hover { text-decoration: none; }
@@ -591,6 +585,10 @@ body .bx-wrapper {
     margin: 0;
 }
 
+.darkbar .menu li:first-child {
+  float: left;
+}
+
 .darkbar .menu li {
     display: inline-block;
     margin: 0;
@@ -607,7 +605,7 @@ body .bx-wrapper {
   color: rgb(255, 255, 255);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: normal;
   padding: 17px 23px;
   text-decoration: none;
@@ -649,16 +647,16 @@ body .bx-wrapper {
     margin: 0;
 }
 .albumbar .menu li a {
-  border: 4px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   color: rgb(255, 255, 255);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 19px;
+  font-size: 1.188rem;
   font-weight: 600;
-  padding: 5px;
+  padding: 0.5em 2em;
   text-align: center;
   text-decoration: none;
-  width: 270px;
+  width: auto;
   margin-right: 20px;
 }
 .albumbar .menu li a:hover{
@@ -682,7 +680,7 @@ body .bx-wrapper {
     background: rgba(0, 0, 0, 0) url("../images/more.png") no-repeat scroll 0 0;
     content: "";
     display: inline-block;
-    height: 13px;
+    height: 11px;
     margin-right: 18px;
     width: 12px;
 }
@@ -694,7 +692,7 @@ body .bx-wrapper {
 .gallery-box.album .event-header h2 {
   color: rgb(0, 0, 0);
   font-family: Open Sans;
-  font-size: 29px;
+  font-size: 1.813rem;
   font-weight: 700;
   margin: 0;
   width: 50%;
@@ -703,7 +701,7 @@ body .bx-wrapper {
   background: rgba(0, 0, 0, 0) url("../images/delete.png") no-repeat scroll right top;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   padding: 0 45px 0 0;
   position: absolute;
@@ -711,7 +709,7 @@ body .bx-wrapper {
   top: 0;
 }
 .gallery-box{
-  padding: 100px 0
+  padding: 3em 0
 }
 .gallery-box .container{
   width: 85%
@@ -721,7 +719,7 @@ body .bx-wrapper {
 .event-header {
   border-bottom: 2px solid rgb(240, 240, 240);
   padding-bottom: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 3em;
 }
 .event-header .image-number {
   float: right;
@@ -729,18 +727,18 @@ body .bx-wrapper {
   right: 0;
   color: #000000;
   font-family: Open Sans;
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600
 }
 .event-header h3 {
   color: rgb(0, 0, 0);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 19px;
+  font-size: 1.188rem;
   font-weight: 600;
   text-decoration: none;
   width: 100%;
-  font-size: 29px;
+  font-size: 1.813rem;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -748,11 +746,11 @@ body .bx-wrapper {
   color: rgb(0, 0, 0);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 19px;
+  font-size: 1.188rem;
   font-weight: 600;
   text-decoration: none;
   width: 100%;
-  font-size: 29px;
+  font-size: 1.813rem;
   font-weight: bold;
   margin-bottom: 25px;  
 }
@@ -763,7 +761,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;  
 }
 .event-header .location{
@@ -773,7 +771,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;   
 }
 .event-header .date{
@@ -783,7 +781,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 14px; 
+  font-size: 0.875rem; 
 }
 
 
@@ -819,7 +817,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 19px;
+  font-size: 1.188rem;
   text-align: center;
 }
 .event-gallery-list li h5 {
@@ -832,7 +830,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 19px;
+  font-size: 1.188rem;
 }
 .event-gallery-list li .subtitle{
   display: inline-block;
@@ -841,7 +839,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 19px; 
+  font-size: 1.188rem; 
 }
 .event-gallery-list li .tags{
   display: inline-block;
@@ -850,7 +848,7 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 14px;   
+  font-size: 0.875rem;   
 }
 
 .event-gallery-list li ul {
@@ -892,7 +890,9 @@ body .bx-wrapper {
 
 
 .content-box{
-  padding: 100px 0
+  padding: 3em 0;
+  min-height: calc(100% - 225px);
+  box-sizing: border-box;
 }
 
 .content-box .container{
@@ -902,21 +902,21 @@ body .bx-wrapper {
 .content-box h5{
   color: rgb(0, 0, 0);
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   margin: 0 0 20px;
 }
 .content-box p{
   color: rgb(0, 0, 0);
   font-family: Open Sans;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: normal;
   margin: 0 0 40px;
 }
 .page-title {
   color: rgb(0, 0, 0);
   font-family: Open Sans;
-  font-size: 29px;
+  font-size: 1.813rem;
   font-weight: 700;
   margin: 0 0 50px;
 }
@@ -935,14 +935,14 @@ body .bx-wrapper {
   text-decoration: none;
   font-family: Open Sans;
   font-weight: 600;
-  font-size: 19px;
+  font-size: 1.188rem;
   text-align: center;
 }
 .purchased .filename a {
   color: rgb(0, 0, 0);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 19px;
+  font-size: 1.188rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
@@ -952,38 +952,38 @@ body .bx-wrapper {
   padding-left: 17px;
 }
 .purchased strong{
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   color: #000000;
   text-transform: uppercase;
 }
 .purchased h5 {
   color: rgb(0, 0, 0);
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0;
 }
 .purchased p{
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;  
   color: #000000;
   margin-bottom: 25px;
 }
 .purchased p a{
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   text-decoration: underline;  
   color: #000000;
 }
 .purchased .button{
   margin-top: 0;
-    padding: 10px 20px;
+  padding: 0.5rem 2rem;
   margin-bottom: 35px;
- border: 4px solid rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
 }
 .purchased  .price{
-  font-size: 25px;
+  font-size: 1.563rem;
   font-weight: 600
 }
 
@@ -1000,7 +1000,7 @@ body .bx-wrapper {
 }
 #resume label {
     display: inline-block;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-top: 11px;
     padding-right: 150px;
 }
@@ -1016,7 +1016,7 @@ body .bx-wrapper {
   color: rgb(255, 255, 255);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 22px;
+  font-size: 1.275rem;
   font-weight: 600;
   height: auto;
   line-height: 20px;
@@ -1032,7 +1032,6 @@ body .bx-wrapper {
   color: rgb(0, 0, 0);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 22px;
   font-weight: 600;
   height: auto;
   line-height: 20px;
@@ -1050,7 +1049,7 @@ body .bx-wrapper {
 
 #tab-container.sign-tab .etabs {
     display: block;
-    margin: 0 auto 60px;
+    margin: 0 auto 2em;
     padding: 0;
     text-align: center;
     width: auto;
@@ -1072,7 +1071,7 @@ body .bx-wrapper {
 #tab-container.sign-tab form label{
   display: inline-block;
   font-family: Open Sans;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 600;
   margin-bottom: 15px;
   width: 100%;
@@ -1092,7 +1091,7 @@ body .bx-wrapper {
     color: rgb(0, 0, 0);
     display: inline-block;
     font-family: Open Sans;
-    font-size: 15px;
+    font-size: 0.9375rem;
     margin-top: 5px;
     text-align: right;
     width: 100%;
@@ -1104,7 +1103,7 @@ body .bx-wrapper {
 .mandatory {
   display: inline-block;
   color: #000000;
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 600;
   width: 100%
@@ -1112,11 +1111,11 @@ body .bx-wrapper {
 
 #tab-container.sign-tab form #submit {
   background: rgb(255, 255, 255) none repeat scroll 0 0;
-  border: 4px solid rgb(26, 26, 26);
+  border: 3px solid rgb(26, 26, 26);
   color: rgb(1, 1, 1);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   height: auto;
   line-height: 2em;
@@ -1159,7 +1158,7 @@ body .bx-wrapper {
 .content-box form label{
   display: inline-block;
   font-family: Open Sans;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 600;
   margin-bottom: 15px;
   width: 100%;
@@ -1187,11 +1186,11 @@ body .bx-wrapper {
 }
 .content-box form #submit {
   background: rgb(255, 255, 255) none repeat scroll 0 0;
-  border: 4px solid rgb(26, 26, 26);
+  border: 3px solid rgb(26, 26, 26);
   color: rgb(1, 1, 1);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   height: auto;
   line-height: 2em;
@@ -1294,7 +1293,7 @@ body .bx-wrapper {
     width: 45%;
 }
 #checkout-step2 .six.columns.align-right .price{
-    font-size: 25px;
+    font-size: 1.563rem;
     font-weight: 600;
 }
 #checkout-step2 .six.columns.align-right #resume .price {
@@ -1318,7 +1317,7 @@ body .bx-wrapper {
   width: 43%;
 }
 #checkout-step2 .six.columns.align-right .details p{
-  font-size:14px;
+  font-size: 0.875rem;
   margin-bottom: 15px;
   margin-top: 10px;
 }
@@ -1337,7 +1336,7 @@ body .bx-wrapper {
 .content-box #checkout-step2.confirmation .edit-info {
   color: rgb(0, 0, 0);
   font-family: Open Sans;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-decoration: underline;
   position: absolute;
   right: 0;
@@ -1347,7 +1346,7 @@ body .bx-wrapper {
 
 
 .lightboxes-box{
-  padding: 100px 0
+  padding: 3em 0
 }
 
 .lightboxes-box .container{
@@ -1361,50 +1360,56 @@ body .bx-wrapper {
 }
 .lightboxes-list li {
     display: inline-block;
-    margin: 0 15px;
-    width: 380px;
+    width: 24%;
     vertical-align: top;
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    box-sizing: border-box;
+    margin: 0
 }
 
 .lightboxes-list li .imagebox {
     background: rgba(0, 0, 0, 0) url("../images/lightbox-hover.png") repeat scroll center center;
     display: inline-block;
-    height: 290px;
     overflow: hidden;
-    width: 380px;
+    max-width: 100%;
+    background-size: 100%;
 }
 .lightboxes-list li .imagebox:hover img{
     opacity: 0.3
 }
 .lightboxes-list li .imagebox img {
     height: auto;
-    min-height: 100%;
-    min-width: 100%;
-    width: auto;
+    max-width: 100%;
 }
 .lightboxes-list li h5 {
   font-family: Open Sans;
-  font-size: 19px;
+  font-size: 1.188rem;
   font-weight: 600;
   margin-top: 10px;
 }
 .lightboxes-list li.add-lightbox {
-
+  height: 191px;
+  border: 3px dashed rgb(240, 240, 240);
+  position: relative;
 }
 .lightboxes-list li.add-lightbox a {
-  border: 3px dashed rgb(240, 240, 240);
+  
   color: rgb(187, 187, 187);
   display: inline-block;
   font-weight: 600;
   text-decoration: none;
   width: 100%;
-  padding: 131px 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 
 
 
 .open-image-box{
-  padding: 100px 0;
+  padding: 3em 0;
 }
 .open-image-box .container{
   width: 70%
@@ -1420,13 +1425,13 @@ body .bx-wrapper {
   padding: 20px;
 }
 .open-image-box .image-content .caption b {
-  font-size: 88px;
+  font-size: 5.5rem;
   font-weight: bold;
   line-height: 88px;
 }
 .open-image-box .image-content .caption p {
   color: rgb(0, 0, 0);
-  font-size: 31px;
+  font-size: 1.938rem;
   margin-bottom: 0;
   padding-left: 5px;
 }
@@ -1435,14 +1440,14 @@ body .bx-wrapper {
   height: auto;
 }
 .open-image-box .five.columns p {
-  font-size: 14px;
+  font-size: 0.875rem;
   margin: 0;
   text-transform: uppercase;
   margin-bottom: 2px;
 }
 
 .row.services{
-  margin-bottom: 100px
+  margin-bottom: 3em
 }
 .row.services div img {
   height: auto;
@@ -1455,19 +1460,19 @@ body .bx-wrapper {
 
 .testimonial {
   background: rgba(0, 0, 0, 0) url("../images/bgTestimonial.png") no-repeat scroll center center;
-  padding: 120px 0;
+  padding: 4em 0;
   text-align: center;
   width: 100%;
 }
 .testimonial p {
   display: block;
-  font-size: 19px;
+  font-size: 1.188rem;
   margin: 0 auto 18px;
   max-width: 790px;
   width: 100%;
 }
 .testimonial span {
-  font-size: 14px;
+  font-size: 0.875rem;
   text-transform: uppercase;
 }
 .slider-box .bx-pager.bx-default-pager,.logos-box .bx-pager.bx-default-pager{
@@ -1548,7 +1553,7 @@ body .bx-wrapper {
 .slider-box .bxslider .caption p {
   color: rgb(255, 255, 255);
   font-family: Open Sans;
-  font-size: 19px;
+  font-size: 1.188rem;
   font-style: italic;
   text-transform: uppercase;
 }
@@ -1556,7 +1561,7 @@ body .bx-wrapper {
 .slider-box .bxslider .caption h5{
   color: rgb(255, 255, 255);
   font-family: Open Sans;
-  font-size: 19px;
+  font-size: 1.188rem;
   margin: 0;
   font-weight: 600;
   text-transform: uppercase;
@@ -1565,7 +1570,7 @@ body .bx-wrapper {
 .slider-box .bxslider .caption span{
   color: rgb(255, 255, 255);
   font-family: Open Sans;
-  font-size: 19px;
+  font-size: 1.188rem;
   margin: 0;
   font-weight: 600;  
   text-transform: uppercase;
@@ -1630,18 +1635,18 @@ body .bx-wrapper {
   display: inline-block;
 }
 .open-image-box .sizes li a {
-  border: 4px solid rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
   border-radius: 0;
   color: rgb(0, 0, 0);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
   height: auto;
   line-height: 20px;
   margin-right: 7px;
   margin-top: 15px;
-  padding: 14px 21px;
+  padding: 0.5em 1em;
   text-align: center;
   text-decoration: none;
   transition: all 0.2s ease 0s;
@@ -1650,7 +1655,7 @@ body .bx-wrapper {
 .open-image-box .sizes li.active a,.open-image-box .sizes li a:hover{
   background: rgb(24, 26, 26) none repeat scroll 0 0;
   color: rgb(256, 256, 256);
-  border: 4px solid rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
 }
 .open-image-box .five.columns p a{
   color: #000;
@@ -1660,7 +1665,7 @@ body .bx-wrapper {
 .open-image-box h5{
   margin-bottom: 0;
   margin-top: 15px;
-   font-size: 14px;
+   font-size: 0.875rem;
    font-weight: bold;
 }
 .open-image-box .button{
@@ -1670,7 +1675,7 @@ body .bx-wrapper {
 
 .related-box {
   background: rgb(247, 247, 247) none repeat scroll 0 0;
-  padding: 60px 0;
+  padding: 2em 0;
 }
 .related-box .container{
   width: 80%
@@ -1679,7 +1684,7 @@ body .bx-wrapper {
   color: rgb(0, 0, 0);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 29px;
+  font-size: 1.813rem;
   font-weight: bold;
   margin-bottom: 40px;
   margin-right: 35px;
@@ -1688,7 +1693,7 @@ body .bx-wrapper {
   display: inline-block;
   color: #000000;
   vertical-align: top;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   padding-top: 4px;
 }
@@ -1790,7 +1795,7 @@ body .bx-wrapper {
 #footer .social li a {
   color: rgb(255, 255, 255);
   display: inline-block;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin: 15px 14px 15px 0;
   opacity: 0.75;
   transition: all ease 0.3s;
@@ -1810,7 +1815,7 @@ body .bx-wrapper {
 #footer-menu li a {
     color: rgb(179, 179, 179);
     font-family: Open Sans;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
     padding: 0 15px;
     text-decoration: none;
@@ -1819,7 +1824,7 @@ body .bx-wrapper {
   color: rgb(179, 179, 179);
   display: inline-block;
   font-family: Open Sans;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
@@ -1830,7 +1835,7 @@ body .bx-wrapper {
     color: rgb(179, 179, 179);
     display: inline-block;
     font-family: Open Sans;
-    font-size: 15px;
+    font-size: 0.9375rem;
     font-weight: 600;
     text-align: right;
     text-transform: uppercase;
