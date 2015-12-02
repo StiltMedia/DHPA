@@ -121,18 +121,24 @@ header a.logo {
 
 
 .home #menu li .user {
-  background-image: url("../images/homemenuIcons.png");
+    background-image: url("../images/homemenuIcons.png");
+    background-position: 7px 7px;
+    padding: 5px 17px !important;
 }
-.home #menu li .user:hover{
-  background-image: url("../images/homemenuIcons.png");
-  background-position: bottom left;
+.home #menu li .user:hover {
+    background-image: url("../images/homemenuIcons.png");
+    background-position: 7px -15px;
+    background-repeat: no-repeat;
 }
 .home #menu li .cart {
   background-image: url("../images/homemenuIcons.png");
+  background-position: -62px 6px;
+  padding: 5px 17px !important;
 }
 .home #menu li .cart:hover {
-  background-image: url("../images/homemenuIcons.png");
-  background-position: bottom right;
+    background-image: url("../images/homemenuIcons.png");
+    background-position: -62px -15px;
+    background-repeat: no-repeat;
 }
 .bx-wrapper .bx-viewport{
   left: 0 !important
@@ -173,6 +179,11 @@ header a.logo {
   margin-top: 15px;
   padding: 10px 40px;
   text-decoration: none;
+  transition: all ease 0.3s;
+}
+.bxslider li .caption a:hover{
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {
   bottom: 25px !important;

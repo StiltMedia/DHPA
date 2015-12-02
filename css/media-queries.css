@@ -658,6 +658,16 @@ html {
 }
 }
 
+
+@media (max-width: 400px) {
+
+.instagram-list li {
+    width: 46%;
+}
+
+}
+
+
 @media (max-width: 360px) {
 .bg-grey .search-input {
   margin: 25px 0 0px 52px;
@@ -684,7 +694,7 @@ html {
 }
 
 .instagram-list li {
-    width: 97%;
+    width: 45%;
 }
 .tab a {
   font-size: 17px;
