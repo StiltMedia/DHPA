@@ -10,12 +10,18 @@ body{
 }
 .align-left{
   text-align: left;
-}.align-left{
-  text-align: left;
 }
 .align-right{
   text-align: right;
 }
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
 .center{
   text-align: center;
 }
@@ -1117,7 +1123,6 @@ body .bx-wrapper {
   font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: 600;
-  width: 100%
 }
 
 #tab-container.sign-tab form #submit {
@@ -1162,7 +1167,6 @@ body .bx-wrapper {
 .content-box form {
   display: block;
   margin: 0 auto;
-  max-width: 475px;
   width: 100%;
 }
 
@@ -1204,11 +1208,10 @@ body .bx-wrapper {
   font-size: 1.25rem;
   font-weight: 600;
   height: auto;
-  line-height: 2em;
   margin-bottom: 10px;
   margin-left: 0;
   outline: medium none;
-  padding: 3px 85px;
+  padding: 0.5em 3em;
   float: right;
   transition: all 0.3s ease 0s;
   width: auto;
